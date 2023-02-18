@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <!-- BootStrap CSS Link -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <!-- Header Area Starts -->
+
+        <header>
+            <nav class="navbar bg-body-tertiary">
+                <div class="nav-elements-container d-flex justify-content-between align-items-center mx-auto py-2">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <h2>
+                                Interactive
+                            </h2>
+                            Geometry Genius
+                        </a>
+                    </div>
+                    <div>
+                        <button id="blog-btn" class="btn btn-primary">
+                            Blog
+                        </button>
+                    </div>
+            </nav>
+        </header>
+
+    <!-- Header Area Ends -->
+
+    <!-- Main Area Starts -->
+        <main>
+            <section>
+                <div class="d-flex justify-content-between p-3 gap-3 flex-column flex-md-row">
+                    <div class="mx-auto shapes-container row g-3">
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <div class="card p-3" style="width: 18rem;">
+                                <img style="height: 200px; width: 250px;" src="assets/images/triangle.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center d-flex flex-column gap-3">
+                                    <h5 class="card-title">Triangle</h5>
+                                    <p class="card-text">Area (A) = 
+                                        <span>0.5 X b X h </span>
+                                    </p>
+
+                                    <div>
+                                        <input id="shape-tri-1" style="width: 4rem;" type="number"> <span>
+                                            cm
+                                        </span>
+                                        <input id="shape-tri-2" style="width: 4rem;" type="number"> <span>
+                                            cm
+                                        </span>
+                                    </div>
+
+                                    <a href="#" id="calculate-btn-1" class="btn btn-primary calculate-btn">Calculate</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <div class="card p-3" style="width: 18rem;">
+                                <img style="height: 200px; width: 250px;" src="assets/images/rectangle.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center d-flex flex-column gap-3">
+                                    <h5 class="card-title">Rectangle</h5>
+                                    <p class="card-text">Area (A) =
+                                        <span>W X I </span>
+                                    </p>
+
+                                    <div>
+                                        <input id="shape-rec-1" style="width: 4rem;" type="number"> <span>
+                                            cm
+                                        </span>
+                                        <input id="shape-rec-2" style="width: 4rem;" type="number"> <span>
+                                            cm
+                                        </span>
+                                    </div>
+
+                                    <a href="#" id="calculate-btn-2" class="btn btn-primary calculate-btn">Calculate</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <div class="card p-3" style="width: 18rem;">
+                                <img style="height: 200px; width: 250px;" src="assets/images/parallelogram.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center d-flex flex-column gap-3">
+                                    <h5 class="card-title">Parallelogram</h5>
+                                    <p class="card-text">Area (A) = 
+                                        <span> b X h </span>
+                                    </p>
+
+                                    <div>
+                                        <input id="shape-par-1" style="width: 4rem;" type="number"> <span>
+                                            cm
+                                        </span>
+                                        <input id="shape-par-2" style="width: 4rem;" type="number"> <span>
+                                            cm
+                                        </span>
+                                    </div>
+
+                                    <a href="#" id="calculate-btn-3" class="btn btn-primary calculate-btn">Calculate</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <div class="card p-3" style="width: 18rem;">
+                                <img style="height: 200px; width: 250px;" src="assets/images/rhombus.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center d-flex flex-column gap-3">
+                                    <h5 class="card-title">Rhombus</h5>
+                                    <p class="card-text">Area (A) = 
+                                        <span>0.5 X d <sub>1</sub>
+                                            X
+                                            d <sub>2</sub> </span>
+                                    </p>
+
+                                    <div>
+                                        <input id="shape-romb-1" style="width: 4rem;" type="number"> <span>
+                                            cm
+                                        </span>
+                                        <input id="shape-romb-2" style="width: 4rem;" type="number"> <span>
+                                            cm
+                                        </span>
+                                    </div>
+
+                                    <a href="#" id="calculate-btn-4" class="btn btn-primary calculate-btn">Calculate</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <div class="card p-3" style="width: 18rem;">
+                                <img style="height: 200px; width: 250px;" src="assets/images/pentagon.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center d-flex flex-column gap-3">
+                                    <h5 class="card-title">Pentagon</h5>
+                                    <p class="card-text">Area (A) = 
+                                        <span>0.5 X p X b </span>
+                                    </p>
+
+                                    <div>
+                                        <input id="shape-pent-1" style="width: 4rem;" type="number"> <span>
+                                            cm
+                                        </span>
+                                        <input id="shape-pent-2" style="width: 4rem;" type="number"> <span>
+                                            cm
+                                        </span>
+                                    </div>
+
+                                    <a href="#" id="calculate-btn-5" class="btn btn-primary calculate-btn">Calculate</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col d-flex justify-content-center align-items-center">
+                            <div class="card p-3" style="width: 18rem;">
+                            <img style="height: 200px; width: 250px;" src="assets/images/ellipse.png" class="card-img-top" alt="...">
+                            <div class="card-body text-center d-flex flex-column gap-3">
+                                    <h5 class="card-title">Ellipse</h5>
+                                    <p class="card-text">Area (A) = 
+                                        <span> &#960;ab </span>
+                                    </p>
+
+                                    <div>
+                                        <input id="shape-ellipse-1" style="width: 4rem;" type="number"> <span>
+                                            cm
+                                        </span>
+                                        <input id="shape-ellipse-2" style="width: 4rem;" type="number"> <span>
+                                            cm
+                                        </span>
+                                    </div>
+
+                                    <a href="#" id="calculate-btn-6" class="btn btn-primary calculate-btn">Calculate</a>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="mx-auto result-container border rounded-2 px-2 py-4">
+                        <div class="">
+                            <h2 class="text-center">Area Calculation</h2>
+                            <div id="result-container ">
+                                <ul id="result-list-container">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    <!-- Main Area Ends -->
+
+    <!-- BootStrap JS Link -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS Link -->
+    <script src="assets/js/utilities.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
