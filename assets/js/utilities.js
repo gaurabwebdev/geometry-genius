@@ -57,8 +57,8 @@ function resultPublish(shape, result){
 
 // Conversion Function
 
-function resultConvert(elementClassName){
-    const buttonList = document.getElementsByClassName(elementClassName);
+function resultConvert(){
+    const buttonList = document.getElementsByClassName('convert-btn');
     for (const button of buttonList){
         button.addEventListener('click', function(){
             const currentResultElement = button.parentNode.previousSibling.firstElementChild.childNodes[1];

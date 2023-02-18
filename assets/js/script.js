@@ -12,7 +12,7 @@ document.getElementById('calculate-btn-1').addEventListener('click', function(){
 
     resultPublish('Triangle', triArea);
 
-    resultConvert('convert-btn');
+    resultConvert();
 
 })
 
@@ -26,7 +26,7 @@ document.getElementById('calculate-btn-2').addEventListener('click', function(){
 
     resultPublish('Rectangle', recArea);
 
-    resultConvert('convert-btn');
+    resultConvert();
 
 })
 
@@ -40,7 +40,7 @@ document.getElementById('calculate-btn-3').addEventListener('click', function(){
 
     resultPublish('Parallelogram', paraArea);
 
-    resultConvert('convert-btn');
+    resultConvert();
 
 })
 
@@ -54,7 +54,7 @@ document.getElementById('calculate-btn-4').addEventListener('click', function(){
 
     resultPublish('Rhombus', rombArea);
 
-    resultConvert('convert-btn');
+    resultConvert();
 
 })
 
@@ -68,7 +68,7 @@ document.getElementById('calculate-btn-5').addEventListener('click', function(){
 
     resultPublish('Pentagon', pentArea);
 
-    resultConvert('convert-btn');
+    resultConvert();
 
 })
 
@@ -81,7 +81,7 @@ document.getElementById('calculate-btn-6').addEventListener('click', function(){
 
     resultPublish('Ellipse', ellipseArea);
 
-    resultConvert('convert-btn');
+    resultConvert();
 
 })
 
