@@ -62,3 +62,13 @@ document.getElementById('calculate-btn-6').addEventListener('click', function(){
     resultPublish('Ellipse', ellipseArea);
 
 })
+
+// Conversion Of CM To Meter
+// const convertBtns = document.getElementsByClassName('convert-btn');
+// for(const button = 0; button < convertBtns.length; button++){
+//     button.addEventListener('click', function(e){
+//         const currentBtn = e.target;
+//         const currentResult = e.target.parentNode.previousSibling.firstElementChild;
+//         console.log(currentResult);
+//     })
+// }
