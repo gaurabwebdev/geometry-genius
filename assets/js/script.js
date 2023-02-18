@@ -12,6 +12,8 @@ document.getElementById('calculate-btn-1').addEventListener('click', function(){
 
     resultPublish('Triangle', triArea);
 
+    resultConvert('convert-btn');
+
 })
 // Rectangle Calc Function
 document.getElementById('calculate-btn-2').addEventListener('click', function(){
@@ -21,6 +23,8 @@ document.getElementById('calculate-btn-2').addEventListener('click', function(){
     const recArea = areaCalculatorTwo(recValueOne, recValueTwo);
 
     resultPublish('Rectangle', recArea);
+
+    resultConvert('convert-btn');
 
 })
 // Parallelogram Calc Function
@@ -32,6 +36,8 @@ document.getElementById('calculate-btn-3').addEventListener('click', function(){
 
     resultPublish('Parallelogram', paraArea);
 
+    resultConvert('convert-btn');
+
 })
 // Rhombus Calc Function
 document.getElementById('calculate-btn-4').addEventListener('click', function(){
@@ -41,6 +47,8 @@ document.getElementById('calculate-btn-4').addEventListener('click', function(){
     const rombArea = areaCalculatorOne(rombValueOne, rombValueTwo, 0.5);
 
     resultPublish('Rhombus', rombArea);
+
+    resultConvert('convert-btn');
 
 })
 // Pentagon Calc Function
@@ -52,6 +60,8 @@ document.getElementById('calculate-btn-5').addEventListener('click', function(){
 
     resultPublish('Pentagon', pentArea);
 
+    resultConvert('convert-btn');
+
 })
 document.getElementById('calculate-btn-6').addEventListener('click', function(){
     const ellipseValueOne = inputValue('shape-ellipse-1');
@@ -60,6 +70,8 @@ document.getElementById('calculate-btn-6').addEventListener('click', function(){
     const ellipseArea = areaCalculatorOne(ellipseValueOne, ellipseValueTwo, 3.1416);
 
     resultPublish('Ellipse', ellipseArea);
+
+    resultConvert('convert-btn');
 
 })
 

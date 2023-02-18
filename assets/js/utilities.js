@@ -30,7 +30,8 @@ function resultPublish(shape, result){
         <p> ${shape}: 
             <span>
                 <span class="results"> ${result} </span>
-                cm<sup>2</sup>
+                <span>cm</span>
+                <sup>2</sup>
                 <div>
                     <button class = "convert-btn btn btn-primary"> 
                     Convert to m 
@@ -47,3 +48,19 @@ function resultPublish(shape, result){
     }
 }
 
+function resultConvert(elementClassName){
+    const buttonList = document.getElementsByClassName(elementClassName);
+    for (const button of buttonList){
+        button.addEventListener('click', function(){
+            const currentResultElement = button.parentNode.previousSibling.firstElementChild.childNodes[1];
+            let currentResultText = button.parentNode.previousSibling.firstElementChild.childNodes[3];
+
+            let currentResult = (parseFloat(currentResultElement.innerText));
+            console.log(currentResultElement);
+            currentResult *= 0.0001;
+            currentResult.toFixed(2);
+            currentResultElement.innerText = currentResult;
+            currentResultText.innerText = 'm';
+        })
+    }
+}
