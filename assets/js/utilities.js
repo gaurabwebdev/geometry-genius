@@ -1,3 +1,4 @@
+// input value function
 function inputValue (x){
     const element = document.getElementById(x);
     const value = parseFloat(element.value).toFixed(2);
@@ -8,15 +9,21 @@ function inputValue (x){
     }
 }
 
+// Area calculator function one
+
 function areaCalculatorOne(x, y, z){
     const area = parseFloat(z * x * y).toFixed(2);
     return area;
 }
 
+// Area calculator function two
+
 function areaCalculatorTwo(x, y){
     const area = parseFloat(x * y).toFixed(2);
     return area;
 }
+
+// Area Publisher function
 
 function resultPublish(shape, result){
     const resultContainer = document.getElementById('result-list-container');
@@ -48,6 +55,8 @@ function resultPublish(shape, result){
     }
 }
 
+// Conversion Function
+
 function resultConvert(elementClassName){
     const buttonList = document.getElementsByClassName(elementClassName);
     for (const button of buttonList){
@@ -55,11 +64,10 @@ function resultConvert(elementClassName){
             const currentResultElement = button.parentNode.previousSibling.firstElementChild.childNodes[1];
             let currentResultText = button.parentNode.previousSibling.firstElementChild.childNodes[3];
 
-            let currentResult = (parseFloat(currentResultElement.innerText));
+            const currentResult = (parseFloat(currentResultElement.innerText)).toFixed(2);
             console.log(currentResultElement);
-            currentResult *= 0.0001;
-            currentResult.toFixed(2);
-            currentResultElement.innerText = currentResult;
+            const newResult = (currentResult * 0.0001).toFixed(2);
+            currentResultElement.innerText = newResult;
             currentResultText.innerText = 'm';
         })
     }

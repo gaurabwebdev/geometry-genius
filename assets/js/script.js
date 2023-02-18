@@ -15,6 +15,8 @@ document.getElementById('calculate-btn-1').addEventListener('click', function(){
     resultConvert('convert-btn');
 
 })
+
+
 // Rectangle Calc Function
 document.getElementById('calculate-btn-2').addEventListener('click', function(){
     const recValueOne = inputValue('shape-rec-1');
@@ -27,6 +29,8 @@ document.getElementById('calculate-btn-2').addEventListener('click', function(){
     resultConvert('convert-btn');
 
 })
+
+
 // Parallelogram Calc Function
 document.getElementById('calculate-btn-3').addEventListener('click', function(){
     const paraValueOne = inputValue('shape-par-1');
@@ -39,6 +43,8 @@ document.getElementById('calculate-btn-3').addEventListener('click', function(){
     resultConvert('convert-btn');
 
 })
+
+
 // Rhombus Calc Function
 document.getElementById('calculate-btn-4').addEventListener('click', function(){
     const rombValueOne = inputValue('shape-romb-1');
@@ -51,6 +57,8 @@ document.getElementById('calculate-btn-4').addEventListener('click', function(){
     resultConvert('convert-btn');
 
 })
+
+
 // Pentagon Calc Function
 document.getElementById('calculate-btn-5').addEventListener('click', function(){
     const pentValueOne = inputValue('shape-pent-1');
@@ -63,6 +71,8 @@ document.getElementById('calculate-btn-5').addEventListener('click', function(){
     resultConvert('convert-btn');
 
 })
+
+
 document.getElementById('calculate-btn-6').addEventListener('click', function(){
     const ellipseValueOne = inputValue('shape-ellipse-1');
     const ellipseValueTwo = inputValue('shape-ellipse-2');
@@ -75,12 +85,3 @@ document.getElementById('calculate-btn-6').addEventListener('click', function(){
 
 })
 
-// Conversion Of CM To Meter
-// const convertBtns = document.getElementsByClassName('convert-btn');
-// for(const button = 0; button < convertBtns.length; button++){
-//     button.addEventListener('click', function(e){
-//         const currentBtn = e.target;
-//         const currentResult = e.target.parentNode.previousSibling.firstElementChild;
-//         console.log(currentResult);
-//     })
-// }
